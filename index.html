@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Tarefas</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" 
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" 
+        crossorigin="anonymous" />
+    </head>
+    <body>
+        <div class="container">
+            <section class="form">
+                <div class="image">
+                    <img src="./assets/images/image1.png" alt="">
+                    <i id ="limpar" class="fas fa-undo-alt"></i>
+                    <div id="data"></div>
+                </div>
+                <form id="new-todo">
+                    <div class="filter-todo">
+                        <input class="text-input" id="search-text" type="text" placeholder="Filtrar tarefas">
+                    </div>
+                    
+                    <div class="complete-box">
+                            <input type="checkbox" id="hide-completed">
+                            <div id="hide-completed" class="completed-label">Esconder tarefas completas</div>
+                    </div>
+                    
+                    <div id="todos" class="tarefas"></div>
+                    <div class="add-todo">
+                        <button class="button"><i class="fas fa-plus-circle"></i></i></button>
+                        <input class="text-input" type="text" placeholder="Adicionar tarefas" name="text">
+                        
+                    </div>
+                </form>
+            </section>
+        </div>
+        <script src="https://unpkg.com/uuid@latest/dist/umd/uuidv4.min.js"></script>
+        <script src="assets/js/todo-functions.js"></script>
+        <script src="assets/js/todo-app.js"></script>
+    </body>
+</html>
